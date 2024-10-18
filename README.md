@@ -43,7 +43,7 @@ MongoDB (Running locally or hosted using MongoDB Atlas)
 1. Clone the Repository
 
 ```
-   git clone https://github.com/your-username/patient-health-dashboard.git
+   git clone https://github.com/shadsheikh/patient-health-dashboard
    cd patient-health-dashboard
 ```
 
