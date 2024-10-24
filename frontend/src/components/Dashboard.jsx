@@ -28,7 +28,13 @@ function Dashboard() {
   const [patients, setPatients] = useState([]);
 
   const fetchInfo = async () => {
-    return fetch("http://localhost:3000/patients")
+    return fetch("http://localhost:3000/patients", {
+      mode: "no-cors",
+      method: "GET",
+      headers: {
+        "Content-Type": "text/plain",
+      },
+    })
       .then((res) => res.json())
       .then((d) => setPatients(d));
   };
