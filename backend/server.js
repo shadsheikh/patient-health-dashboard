@@ -11,17 +11,12 @@ const app = express();
 const __dirname = path.resolve();
 
 app.use(express.json());
-const corsOption = {
-    origin: ['http://localhost:3000'],
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-}
-app.use(cors(corsOption));
+app.use(cors({ origin: true }));
 
 const PORT = process.env.PORT || 3000
 
 // Get all patients
-app.get('/patients', async (req, res) => {
+app.get('/patients/', async (req, res) => {
     try {
         const patients = await Patient.find();
         res.json(patients);
@@ -31,7 +26,7 @@ app.get('/patients', async (req, res) => {
 });
 
 // Create an authorization request
-app.post('/authorizations', async (req, res) => {
+app.post('/authorizations/', async (req, res) => {
     const authorization = new Authorization({
         patientId: req.body.patientId,
         treatment: req.body.treatment,
