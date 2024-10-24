@@ -54,12 +54,8 @@ MongoDB (Running locally or hosted using MongoDB Atlas)
 
 ```
 # Install backend dependencies
-cd backend
-npm install
-
-# Install frontend dependencies
-cd ../frontend
-npm install
+npm run build
+npm run start
 ```
 
 3. Configure Environment Variables
@@ -73,36 +69,9 @@ MONGODB_URI=mongodb://localhost:27017/yourDatabaseName
 PORT=3000
 ```
 
-4. Run MongoDB
-   Ensure MongoDB is running locally. You can start it using the following command:
-
-```
-mongod
-```
-
-Or if using MongoDB Atlas, configure the connection string in your .env file.
-
-5. Run the Backend Server
-
-   ```
-   cd backend
-   npm start
-   ```
-
-   The backend will be running on http://localhost:3000.
-
-6. Run the Frontend Development Server
-
-   ```
-   cd frontend
-   npm start
-   ```
-
-   The frontend will be running on http://localhost:5173.
-
 7. Open the App
-   Once both servers are running, open your browser and navigate to:
+   Once app is running, open your browser and navigate to:
 
    ```
-   http://localhost:5173
+   http://localhost:3000
    ```
