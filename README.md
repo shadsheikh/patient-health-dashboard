@@ -1,5 +1,7 @@
 # Patient Health Dashboard for Prior Authorization
+
 https://health-deshboard.netlify.app/
+
 ![image](https://github.com/user-attachments/assets/0f5b971b-688a-42ad-9627-7a65264f1df0)
 
 ## Overview
@@ -12,7 +14,7 @@ This is a full-stack application built using React, Node.js, Express, and MongoD
 
 #### Backend: Node.js, Express, Mongoose (MongoDB ORM).
 
-#### atabase: MongoDB.
+#### Database: MongoDB.
 
 #### API: RESTful API with routes for patient data and prior authorization requests.
 
@@ -40,13 +42,14 @@ This is a full-stack application built using React, Node.js, Express, and MongoD
 Ensure that the following are installed on your machine:
 
 Node.js (v14.x or later)
-MongoDB (Running locally or hosted using MongoDB Atlas)
+
+MongoDB (hosted using MongoDB Atlas)
 
 1. Clone the Repository
 
    ```
-      git clone https://github.com/your-username/patient-health-dashboard.git
-      cd patient-health-dashboard
+   git clone https://github.com/your-username/patient-health-dashboard.git
+   cd patient-health-dashboard
    ```
 
 2. Install Dependencies
