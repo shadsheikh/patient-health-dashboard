@@ -27,7 +27,7 @@ function Dashboard() {
   const [data, setData] = useState([]);
   const [patients, setPatients] = useState([]);
 
-  const fetchInfo = () => {
+  const fetchInfo = async () => {
     return fetch("http://localhost:3000/patients")
       .then((res) => res.json())
       .then((d) => setPatients(d));
