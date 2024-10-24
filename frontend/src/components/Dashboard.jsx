@@ -49,8 +49,8 @@ function Dashboard() {
   }, [page, patients]);
 
   return (
-    <>
-      <PageTitle>Dashboard</PageTitle>
+    <div className="mx-3">
+      <PageTitle>Patient Health Dashboard</PageTitle>
 
       <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
         <InfoCard title="Total Patient" value="6389">
@@ -145,7 +145,7 @@ function Dashboard() {
           />
         </TableFooter>
       </TableContainer>
-    </>
+    </div>
   );
 }
 
