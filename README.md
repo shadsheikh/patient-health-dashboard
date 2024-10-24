@@ -1,5 +1,5 @@
 # Patient Health Dashboard for Prior Authorization
-
+https://health-deshboard.netlify.app/
 ![image](https://github.com/user-attachments/assets/0f5b971b-688a-42ad-9627-7a65264f1df0)
 
 ## Overview
@@ -44,32 +44,30 @@ MongoDB (Running locally or hosted using MongoDB Atlas)
 
 1. Clone the Repository
 
-```
-   git clone https://github.com/your-username/patient-health-dashboard.git
-   cd patient-health-dashboard
-```
+   ```
+      git clone https://github.com/your-username/patient-health-dashboard.git
+      cd patient-health-dashboard
+   ```
 
 2. Install Dependencies
    Navigate to the root directory and install dependencies for both the frontend and backend.
 
-```
-# Install backend dependencies
-npm run build
-npm run start
-```
+   ```
+   # Install backend dependencies
+   npm run build
+   npm run start
+   ```
 
 3. Configure Environment Variables
+   You will need to create environment variables for MongoDB connection.
+   In the root folder, create a .env file:
 
-You will need to create environment variables for MongoDB connection.
+   ```
+   MONGODB_URI=mongodb://localhost:27017/yourDatabaseName
+   PORT=3000
+   ```
 
-In the backend folder, create a .env file:
-
-```
-MONGODB_URI=mongodb://localhost:27017/yourDatabaseName
-PORT=3000
-```
-
-7. Open the App
+4. Open the App
    Once app is running, open your browser and navigate to:
 
    ```
