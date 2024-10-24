@@ -1,5 +1,4 @@
-// models/Patient.js
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const patientSchema = new mongoose.Schema({
     name: String,
@@ -9,4 +8,6 @@ const patientSchema = new mongoose.Schema({
     labResults: [{ test: String, result: String, date: Date }],
 });
 
-module.exports = mongoose.model('Patient', patientSchema);
+const Patient = mongoose.model('Patient', patientSchema);
+
+export default Patient;

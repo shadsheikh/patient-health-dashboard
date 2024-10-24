@@ -1,5 +1,4 @@
-// models/Authorization.js
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const authorizationSchema = new mongoose.Schema({
     patientId: { type: mongoose.Schema.Types.ObjectId, ref: 'Patient' },
@@ -10,4 +9,6 @@ const authorizationSchema = new mongoose.Schema({
     createdAt: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('Authorization', authorizationSchema);
+const Authorization = mongoose.model('Authorization', authorizationSchema);
+
+export default Authorization;
