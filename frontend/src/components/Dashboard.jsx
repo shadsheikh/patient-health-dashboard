@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import InfoCard from "../components/Cards/InfoCard";
 import PageTitle from "../components/Typography/PageTitle";
@@ -26,14 +25,16 @@ import {
 function Dashboard() {
   const [page, setPage] = useState(1);
   const [data, setData] = useState([]);
-
   const [patients, setPatients] = useState([]);
 
+  const fetchInfo = () => {
+    return fetch("http://localhost:3000/patients")
+      .then((res) => res.json())
+      .then((d) => setPatients(d));
+  };
+
   useEffect(() => {
-    axios
-      .get("http://localhost:3000/patients")
-      .then((response) => setPatients(response.data))
-      .catch((error) => console.error("Error fetching patient data:", error));
+    fetchInfo();
   }, []);
 
   const resultsPerPage = 10;
