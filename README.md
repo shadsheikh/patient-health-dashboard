@@ -1,5 +1,7 @@
 # Patient Health Dashboard for Prior Authorization
 
+![image](https://github.com/user-attachments/assets/0f5b971b-688a-42ad-9627-7a65264f1df0)
+
 ## Overview
 
 This is a full-stack application built using React, Node.js, Express, and MongoDB. Healthcare providers can use the app to view patient data and manage prior authorization requests for treatments.
